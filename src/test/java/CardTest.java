@@ -1,27 +1,24 @@
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.util.Collections;
 
 import static org.junit.Assert.assertEquals;
 
 public class CardTest {
-    Card testCard;
+    Card fourDiamonds;
 
     @Before
     public void before(){
-     testCard = new Card(SuitType.DIAMOND,NumberType.FOUR);
+     fourDiamonds = new Card(SuitType.DIAMOND,NumberType.FOUR);
     }
 
     @Test
     public void hasSuit(){
-        assertEquals(SuitType.DIAMOND, testCard.getSuit());
+        assertEquals(SuitType.DIAMOND, fourDiamonds.getSuit());
     }
 
     @Test
     public void hasNumber() {
-        assertEquals(NumberType.FOUR, testCard.getNumber());
+        assertEquals(NumberType.FOUR, fourDiamonds.getNumber());
     }
 
         @Test
@@ -31,10 +28,10 @@ public class CardTest {
         @Test
         public void getDeck(){
             Deck newDeck = new Deck();
-//           newDeck.shuffleDeck();
             System.out.println(newDeck);
              assertEquals(52, newDeck.countCards());
         }
+
 
     }//class
 

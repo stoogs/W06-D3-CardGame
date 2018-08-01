@@ -5,6 +5,6 @@ public class Dealer {
     private ArrayList<Card> deck;
 
     public Dealer(){
-        deck = new ArrayList<Card>();
+        //deck = new ArrayList<Card>();
     }
 }

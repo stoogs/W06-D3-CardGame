@@ -4,7 +4,7 @@
     public class Deck {
     private  ArrayList<Card> cards;  //cards is an array of cards
 
-    public Deck(){
+    public Deck(){  //everytime a deck is created this runs. so, makes then shuffles on creation.
         this.cards = makeNewDeck(); // deck created
         shuffleDeck(); // deck shuffled
     }

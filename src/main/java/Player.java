@@ -6,7 +6,7 @@ public class Player { // initializer
 
 public Player(String name){
     this.name = name;
-    this.hand = new ArrayList<Card>();
+    this.hand = new ArrayList<Card>();  //create an array of Card
 }
  public void playerGetsCards(){
     //get card from dealer

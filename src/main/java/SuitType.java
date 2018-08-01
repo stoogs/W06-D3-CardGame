@@ -4,7 +4,7 @@ public enum SuitType {
     DIAMOND(1, "Diamond"),
     CLUB(0,"Club");
 
-    private final int rank;
+    private final int rank;  // final = can't change after initial setting
     private final String name;
 
     SuitType(int rank, String name) {
@@ -13,7 +13,7 @@ public enum SuitType {
     }
 
     public int getRank(){
-        return rank;
+        return this.rank; //passed cards rank
     }
 }//class
 
